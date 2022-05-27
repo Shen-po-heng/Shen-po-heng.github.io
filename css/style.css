@@ -1,0 +1,187 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+	
+	
+}
+body{
+	width: 100%;
+    overflow-x:hidden;
+	position: middle;
+}
+.Watashi {
+	background-color: black;
+    height: 80vh;
+    width: 100%;
+    overflow-x:hidden;
+	
+}
+a{
+	text-decoration: none
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top:45px;
+    padding-left: 8%;
+    padding-right: 8%
+}
+.Logo{
+    color:white;
+    font-size: 36px;
+    letter-spacing:1.5px;
+    cursor:pointer;
+}
+span{
+    color:rgb(252, 66, 66);
+    cursor:pointer;
+}
+nav ul a{
+    list-style-type:none;
+    display:inline-block;
+    padding:10px 25px;
+}
+.btn_option{
+    background-color:rgb(255, 208, 0);
+	color: black;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 50% 20% / 10% 40%;
+	margin-right: 20px;
+	transition: transform .2s; 
+}
+.btn_option:hover{
+	color: yellow;
+	border-radius: 10% 40% / 50% 20%;
+    transform: scale(1.2);
+}
+.btn{
+	background-color:red;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 45px;
+	transition: transform .2s; 
+}
+.btn:hover{
+	color:black;
+	transform: scale(1.25);
+}
+.lastname{
+    color:rgb(237, 248, 248);
+}
+.content{
+    position: absolute;
+	top: 45%;
+	left:8%;
+	transform: translateY(-50%);
+    display:inline-block;;
+    width: 100%;
+}
+section div {
+    display:inline-block;
+    margin:20px 20px 20px;
+}
+
+.vl {
+  border-left: solid white;
+  height: 500px;
+}
+
+.me{
+    margin: 40px 100px 20px;
+    border-radius: 100%;
+    cursor:pointer;
+}
+h1{
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 75px;
+}
+h3{
+	color: orange;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+h4{
+	color: rgba(6, 147, 241, 0.8);
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+.Taiwan{
+    color:green;
+	text-decoration: none
+}
+.about-text{
+    color: white;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+h2{
+	color: white;
+	font-size: 35px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+h5{
+	color: lightblue;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.levelstrong{
+	color:red;
+	font-weight: bold;
+}
+.levelgood{
+	color:yellow;
+	font-weight:bold;
+}
+.levelokay{
+	color:lightgreen;
+	font-weight:bold;
+}
+.school{
+	color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-me{
+	width: 100%;
+	height: 290px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.contact-me p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contact-me .button-two{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.contact-me .button-two:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}

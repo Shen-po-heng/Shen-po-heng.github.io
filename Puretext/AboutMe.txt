@@ -1,0 +1,14 @@
+About Me
+I love learning new stuff, making new friends, reading and travel.
+I am glad to share my life and idea with people to brainstorm together.
+
+Programming Skills: 
+A. Extensive experience in C/C++ and Python(Machine Learning)
+B. Web development experience in HTML, CSS, JavaScript, C#, Node.js, PHP
+C. App experience in Java(Android), Kotlin, Flutter, and Swift(ios)
+D. Database experience in MySQL, MS-SQL, PostgreSQL
+E. Cloud server experience in Linux, Hadoop, MapReduce
+F. Other experience in Git, Docker
+
+-Speaking fluent English and entry-level German
+-Major on Machine Learning
