@@ -25,24 +25,29 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px 8%;
+    flex-wrap: wrap;
 }
 
 .Logo {
     color: black;
-    font-size: 72px;
+    font-size: 36px;
     letter-spacing: 1.5px;
+    flex: 1;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    flex: 2;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 nav ul a {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    font-size: 36px;
+    font-size: 18px;
     color: black;
     text-decoration: none;
 }
@@ -55,6 +60,10 @@ nav ul a {
     border-radius: 10px;
     margin-right: 10px;
     transition: transform .2s;
+}
+
+.btn_option img {
+    margin-left: 8px;
 }
 
 .btn_option:hover {
@@ -91,7 +100,7 @@ nav ul a {
 }
 
 .about-text p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -165,7 +174,6 @@ nav ul a {
     }
 
     nav ul {
-        display: none;
+        justify-content: center;
     }
 }
-
