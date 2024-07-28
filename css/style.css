@@ -12,7 +12,7 @@ body{
 	position: middle;
 }
 .Watashi {
-	background-color: black;
+	background-color: white;
     height: 80vh;
     width: 100%;
     overflow-x:hidden;
@@ -22,6 +22,7 @@ a{
 	text-decoration: none
 }
 nav{
+	background-color: antiquewhite;
     display:flex;
     align-items: center;
     justify-content:space-between;
@@ -30,22 +31,18 @@ nav{
     padding-right: 8%
 }
 .Logo{
-    color:white;
-    font-size: 36px;
+    color:Black;
+    font-size: 72px;
     letter-spacing:1.5px;
-    cursor:pointer;
-}
-span{
-    color:rgb(252, 66, 66);
-    cursor:pointer;
 }
 nav ul a{
     list-style-type:none;
     display:inline-block;
     padding:10px 25px;
+	font-size: 36px;
 }
 .btn_option{
-    background-color:rgb(255, 208, 0);
+    background-color:whitesmoke;
 	color: black;
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -56,9 +53,9 @@ nav ul a{
 	transition: transform .2s; 
 }
 .btn_option:hover{
-	color: yellow;
+	color: red;
 	border-radius: 10% 40% / 50% 20%;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .btn{
 	background-color:red;
@@ -77,6 +74,8 @@ nav ul a{
 .lastname{
     color:rgb(237, 248, 248);
 }
+
+
 .content{
     position: absolute;
 	top: 45%;
@@ -90,67 +89,26 @@ section div {
     margin:20px 20px 20px;
 }
 
-.vl {
-  border-left: solid white;
-  height: 500px;
+.me{
+    margin: 200px 100px 20px;
 }
 
-.me{
-    margin: 40px 100px 20px;
-    border-radius: 100%;
-    cursor:pointer;
-}
-h1{
-	color: white;
-	margin: 20px 0px 20px;
-	font-size: 75px;
-}
-h3{
-	color: orange;
-	font-size: 25px;
-	margin-bottom: 10px;
-}
-h4{
-	color: rgba(6, 147, 241, 0.8);
-	letter-spacing: 2px;
-	font-size: 20px;
-}
-.Taiwan{
-    color:green;
-	text-decoration: none
-}
+/* Right side of body */
 .about-text{
-    color: white;
+    color: black;
 	letter-spacing: 1px;
 	line-height: 28px;
-	font-size: 18px;
-	margin-bottom: 45px;
+	font-size: 20px;
+	margin-top: 45px;
 }
 h2{
-	color: white;
+	color: black;
 	font-size: 35px;
 	margin-top: 20px;
 	margin-bottom: 15px;
 }
-h5{
-	color: lightblue;
-	font-size: 20px;
-	margin-bottom: 10px;
-}
-.levelstrong{
-	color:red;
-	font-weight: bold;
-}
-.levelgood{
-	color:yellow;
-	font-weight:bold;
-}
-.levelokay{
-	color:lightgreen;
-	font-weight:bold;
-}
 .school{
-	color:white;
+	color:black;
     text-decoration: none;
     font-weight: bold;
 }
