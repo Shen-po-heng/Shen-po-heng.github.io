@@ -1,145 +1,165 @@
-*{
-    padding:0;
-    margin:0;
-    font-family: 'Josefin Sans', sans-serif;
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-	
-	
+    font-family: 'Josefin Sans', sans-serif;
 }
-body{
-	width: 100%;
-    overflow-x:hidden;
-	position: middle;
-}
-.Watashi {
-	background-color: white;
-    height: 80vh;
+
+body {
     width: 100%;
-    overflow-x:hidden;
-	
+    overflow-x: hidden;
 }
-a{
-	text-decoration: none
+
+.Watashi {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-nav{
-	background-color: antiquewhite;
-    display:flex;
+
+nav {
+    background-color: antiquewhite;
+    display: flex;
     align-items: center;
-    justify-content:space-between;
-    padding-top:45px;
-    padding-left: 8%;
-    padding-right: 8%
+    justify-content: space-between;
+    padding: 20px 8%;
 }
-.Logo{
-    color:Black;
+
+.Logo {
+    color: black;
     font-size: 72px;
-    letter-spacing:1.5px;
+    letter-spacing: 1.5px;
 }
-nav ul a{
-    list-style-type:none;
-    display:inline-block;
-    padding:10px 25px;
-	font-size: 36px;
+
+nav ul {
+    display: flex;
+    list-style: none;
 }
-.btn_option{
-    background-color:whitesmoke;
-	color: black;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 10px 25px;
-	border-radius: 50% 20% / 10% 40%;
-	margin-right: 20px;
-	transition: transform .2s; 
+
+nav ul a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 36px;
+    color: black;
+    text-decoration: none;
 }
-.btn_option:hover{
-	color: red;
-	border-radius: 10% 40% / 50% 20%;
+
+.btn_option {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: transform .2s;
+}
+
+.btn_option:hover {
+    color: red;
     transform: scale(1.1);
 }
-.btn{
-	background-color:red;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 10px 25px;
-	border-radius: 45px;
-	transition: transform .2s; 
-}
-.btn:hover{
-	color:black;
-	transform: scale(1.25);
-}
-.lastname{
-    color:rgb(237, 248, 248);
+
+.content {
+    display: flex;
+    flex: 1;
+    padding: 20px 8%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
-.content{
-    position: absolute;
-	top: 45%;
-	left:8%;
-	transform: translateY(-50%);
-    display:inline-block;;
-    width: 100%;
-}
-section div {
-    display:inline-block;
-    margin:20px 20px 20px;
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.me{
-    margin: 200px 100px 20px;
+.about-text {
+    max-width: 60%;
 }
 
-/* Right side of body */
-.about-text{
+.about-text h2 {
     color: black;
-	letter-spacing: 1px;
-	line-height: 28px;
-	font-size: 20px;
-	margin-top: 45px;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
-h2{
-	color: black;
-	font-size: 35px;
-	margin-top: 20px;
-	margin-bottom: 15px;
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
-.school{
-	color:black;
+
+.school {
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
-.contact-me{
-	width: 100%;
-	height: 290px;
-	background: #191919;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
+.contact-me {
+    width: 100%;
+    background: #191919;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
-.contact-me p{
-	color: white;
-	font-size: 30px;
-	font-weight: bold;
-	margin-bottom: 25px;
+
+.contact-me p {
+    font-size: 20px;
+    font-weight: bold;
 }
-.contact-me .button-two{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 13px 30px;
-	border-radius: 30px;
-	transition: .4s; 
+
+.contact-me .button-two {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: .4s;
 }
-.contact-me .button-two:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
+
+.contact-me .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .Logo {
+        font-size: 28px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo {
+        font-size: 24px;
+    }
+
+    .content {
+        padding: 10px 5%;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        display: none;
+    }
 }
