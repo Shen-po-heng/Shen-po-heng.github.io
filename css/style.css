@@ -52,6 +52,40 @@ nav ul a {
     text-decoration: none;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+}
+th {
+    background-color: #ffd699;
+    font-size: 18px;
+    color: #333;
+}
+td {
+    background-color: #fff5e6;
+    color: #555;
+}
+tr:nth-child(even) td {
+    background-color: #ffe0b3;
+}
+table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+h1 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #e68a00;
+}
+
 .btn_option {
     background-color: whitesmoke;
     color: black;
@@ -73,11 +107,10 @@ nav ul a {
 
 .content {
     display: flex;
-    flex: 1;
     padding: 20px 8%;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px; /* Adds space between the image and text */
 }
 
 .content img {
@@ -87,20 +120,33 @@ nav ul a {
     flex: 1 1 300px;
 }
 
+.left img {
+    margin-top: 80px;
+    border-radius: 10px;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.technical-skills {
+    margin-top: -200px; /* Adds space between About Me and Technical Skills */
+}
 .about-text {
-    max-width: 60%;
+    max-width: 100%;
     flex: 2 1 500px;
 }
 
 .about-text h2 {
     color: black;
-    font-size: 28px;
+    font-size: 36px;
     margin-top: 20px;
     margin-bottom: 15px;
 }
 
 .about-text p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -111,6 +157,23 @@ nav ul a {
     font-weight: bold;
 }
 
+.center-container {
+    max-width: 950px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+}
+.center-container h2{
+    font-size: 36px;
+}
+.center-container p {
+    font-size: 20px; /* Increase the font size for paragraphs */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+.center-container li {
+    font-size: 20px; /* Increase the font size for list items */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
 .contact-me {
     width: 100%;
     background: #191919;
@@ -175,5 +238,15 @@ nav ul a {
 
     nav ul {
         justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .right {
+        max-width: 100%;
+        text-align: center;
     }
 }
