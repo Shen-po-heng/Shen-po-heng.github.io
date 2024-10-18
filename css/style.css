@@ -131,11 +131,12 @@ h1 {
     justify-content: flex-start;
 }
 .technical-skills {
-    margin-top: -200px; /* Adds space between About Me and Technical Skills */
+    margin-top: 0px; /* Adds space between About Me and Technical Skills */
 }
 .about-text {
     max-width: 100%;
     flex: 2 1 500px;
+    margin-bottom: 10px;
 }
 
 .about-text h2 {
@@ -148,7 +149,7 @@ h1 {
 .about-text p {
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .school {
@@ -158,7 +159,7 @@ h1 {
 }
 
 .center-container {
-    max-width: 950px; /* Adjust width as needed */
+    max-width: 90%; /* Adjust width as needed */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Add some padding */
 }
