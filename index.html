@@ -1,182 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Icon for Web page -->
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    <title>Home page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Po-Heng Shen</title>
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="Watashi">
-        <nav>
-            <h2 class="Logo">Po-Heng Shen</h2>
+  <div class="layout">
+
+    <aside class="sidebar" id="sidebar-placeholder"></aside>
+
+    <main class="main-content">
+
+      <h1>Po-Heng Shen</h1>
+      <p style="color: var(--muted); font-size: 1.15rem; margin-bottom: 2.0 rem;">AI Software Engineer · Taiwan</p>
+
+      <p>
+        AI Software Engineer specializing in building end-to-end, production-grade LLM systems —
+        including AI agents, evaluation infrastructure, and backend optimization.
+        I bridge AI research and real-world deployment, with a track record of delivering
+        measurable performance gains (e.g., 10× latency improvement) under production constraints.
+      </p>
+
+      <!-- Experience -->
+      <h2>Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <span class="year">2025.12 – Present</span>
+          <div class="detail">
+            <strong>AI Software Engineer</strong>
+            <p class="org">HorusEye Technology (Subsidiary of Oomii Inc.) · Taiwan</p>
             <ul>
-                <a href="https://www.linkedin.com/in/pohengshen/" class="btn_option">LinkedIn
-                    <img src="images/linkedin.png" alt="LinkedIn" width="30" height="30">
-                </a>
-                <a href="https://github.com/Shen-po-heng" class="btn_option">Github
-                    <img src="images/github-mark.png" alt="Github" width="30" height="30">
-                </a>
+              <li>Designed and deployed a production-grade LLM evaluation infrastructure, reducing evaluation time from 3 hours to 20 minutes (~10×), enabling continuous regression testing for AI systems.</li>
+              <li>Optimized AI backend systems (webhooks, CX agents), achieving latency reduction from 4–5s to 0.1–0.2s (~10× improvement) through system redesign — caching strategies, database migration from BigQuery to Cloud SQL.</li>
+              <li>Designed and led development of a large-scale AI testing pipeline (&gt;20K LOC), incorporating LLM-as-a-judge and cross-model validation to improve system reliability.</li>
+              <li>Owned and delivered core AI components in a 7-figure enterprise project, ensuring stable delivery under tight deadlines and high system load.</li>
+              <li>Developed and evaluated Graph RAG systems, improving knowledge retrieval accuracy for complex, real-world datasets.</li>
+              <li>Acted as a key technical bridge across teams (PM, backend, design), aligning research-driven AI solutions with production deployment requirements.</li>
             </ul>
-        </nav>
-        <section class="content">
-            <div class="left">
-                <img src="images/Me.jpg" alt="Me" width="400" height="600">
-            </div>
-            <div class="right">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>
-                        🖥️ <strong>Technical Expertise:</strong><br>
-                          &nbsp;&nbsp;&nbsp;-- Software Development: 2+ years coding in C/C++, with experience in developing efficient software solutions.<br>
-                          &nbsp;&nbsp;&nbsp;-- Machine Learning: 4+ years working with Python, focusing on applying ML algorithms to real-world problems and enhancing system accuracy.<br><br>
-                          
-                        🌱 <strong>Continuous Learning:</strong> Currently expanding my knowledge in DevOps through an IBM course, always open to new technologies.<br><br>
-                        
-                        💼 <strong>Professional Insight:</strong> Passionate about creating impactful solutions and committed to thorough research and collaboration to achieve clarity in complex projects.<br><br>
-                        
-                        📫 Feel free to connect on <a href="https://www.linkedin.com/in/pohengshen/">LinkedIn</a>!
-                    </p>
-                    
-                    <h2>Technical Skills</h2>
-                        <table>
-                            <tr>
-                                <th>Category</th>
-                                <th>Details</th>
-                            </tr>
-                            <tr>
-                                <td>Programming Languages</td>
-                                <td>C++, Python, C</td>
-                            </tr>
-                            <tr>
-                                <td>Libraries & Frameworks</td>
-                                <td>Qt, STL,boost, Scikit-learn, TensorFlow, PyTorch</td>
-                            </tr>
-                            <tr>
-                                <td>Development Tools</td>
-                                <td>CMake, Conan, Docker</td>
-                            </tr>
-                            <tr>
-                                <td>Operating Systems / Environments</td>
-                                <td>Linux, Debian, Windows</td>
-                            </tr>
-                            <tr>
-                                <td>Distributed system</td>
-                                <td>Hadoop MapReduce</td>
-                            </tr>
-                            <tr>
-                                <td>Database Managements</td>
-                                <td>MS-SQL, MySQL, SQLite</td>
-                            </tr>
-                            <tr>
-                                <td>Version Controls</td>
-                                <td>GitHub, GitLab</td>
-                            </tr>
-                        </table>
-                </div>    
-            </div>
-        </section>
-        <div class="center-container">
-            <h2>Work</h2>
-            <p>
-                <strong>Student Assistant, Intelligent Embedded System</strong> <span>@</span> 
-                <a href="https://www.uni-kassel.de/uni/" class="school">University of Kassel</a>, Germany<br>
-                <em>10.2022 - 09.2023</em>
-            </p>
-            <div style="margin-top: -10px;">
-                <ul style="margin-bottom: 25px;">
-                    <li style="margin-top: 10px;">Implemented replay-based continual learning strategies, developing six algorithms to address catastrophic forgetting in regression tasks</li>
-                    <li style="margin-top: 5px;">Researched and developed standards for evaluating replay strategies and verifying the quality of reconstructed datasets using metrics such as RMSE and Pearson correlation</li>
-                    <li style="margin-top: 5px;">Contributed to the "Digital Twin Solar" project, assisting in detecting anomaly data with Variational Autoencoders</li>
-                    <li style="margin-top: 10px;">These projects expanded my expertise in continual learning, PyTorch, and advanced model evaluation techniques</li>
-                </ul>
-            </div>
-
-            <p>
-                <strong>Assistant Software Engineer</strong> <span>@</span> 
-                <a href="http://www.multicast.com.tw/" class="school">Multicast Digital Integrated Corporation</a>, Taiwan<br>
-                <em>07.2019 - 10.2019</em>
-            </p>
-            <div style="margin-top: -10px;">
-                <ul style="margin-bottom: 25px;">
-                    <li style="margin-top: 10px;">Debugged client websites as part of a small team, ensuring optimal end-user experience</li>
-                    <li style="margin-top: 5px;">Led a project aimed at reducing earthquake-related collateral damage by preventing unintended power failures in valuable machinery</li>
-                    <li style="margin-top: 5px;">Developed a web server integrated with a GSM module designed to respond to warning messages and switch power sources seconds before a natural disaster</li>
-                    <li style="margin-top: 10px;">This project enhanced my web development skills and reinforced my ability to work independently on critical, real-world applications</li>
-                </ul>
-            </div>
-
-            <p>
-                <strong>Teaching Assistant for Introduction to Computer Science</strong> <span>@</span> 
-                <a href="https://www.ncu.edu.tw/en/index.html" class="school">National Central University</a>, Taiwan<br>
-                <em>09.2016 - 06.2017</em>
-            </p>
-            <div style="margin-top: -10px;">
-                <ul style="margin-bottom: 25px;">
-                    <li style="margin-top: 10px;">Edited student homework for each chapter of the course tutorial</li>
-                    <li style="margin-top: 5px;">Developed a website to present students' work, improving accessibility and engagement</li>
-                </ul>
-            </div>
-            <h2>Education</h2>
-                <p>
-                    <strong>M.Sc. Electrical Communication Engineering</strong> <span>@</span> 
-                    <a href="https://www.uni-kassel.de/uni/" class="school">University of Kassel</a>, Germany (Grade: 1.9)<br>
-                    <em>04.2020 - 03.2024</em>
-                </p>
-                <div style="margin-top: 10px;">
-                    <ul style="margin-bottom: 25px;">
-                        <li style="margin-top: 10px;"><strong>Thesis:</strong> GNSS Positioning Accuracy Improvement via Reference Mobile Technology
-                            <ul style="margin-top: 5px;">
-                                <li >Proposed a method to enhance smartphone GNSS accuracy for Vulnerable Road Users (VRUs), 
-                                    improving accuracy by up to 1 m in dynamic and 1.5 m in stationary cases.
-                                    Collaborated with the Communication Technology Dept. of Uni-Kassel for publication</li>
-                            </ul>
-                        </li>
-                        <li style="margin-top: 10px;"><strong>Project:</strong> Usability of Hadoop Clusters for CPU-heavy applications in VRU safety
-                            <ul style="margin-top: 5px;">
-                                <li>Optimized a CPU-intensive traffic collision simulation (PCD algorithm) using multithreading and multiprocessing
-                                    Built an 8-node Hadoop cluster, achieving a 1.67 times speed increase and reducing CPU load on client systems</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <p>
-                    <strong>B.Sc. Electrical Engineering</strong> <span>@</span> 
-                    <a href="https://www.ncu.edu.tw/en/index.html" class="school">National Central University</a>, Taiwan (GPA: 3.59/4.0)<br>
-                    <em>09.2015 - 06.2019</em>
-                </p>
-                <div style="margin-top: 10px;">
-                    <ul style="margin-bottom: 25px;">
-                        <li>Teaching Assistant for Introduction to Computer Science (C++ courses) and Student Service Learning</li>
-                        <li style="margin-top: 5px;">Participated in hackathon competitions and laboratory work</li>
-                        <li style="margin-top: 10px;"><strong>Project:</strong> Two-Way F-M Circuit Partition
-                            <ul style="margin-top: 5px;">
-                                <li>Implemented the F-M Heuristic algorithm to partition circuit elements into two balanced subcircuits while minimizing the cut-set</li>
-                            </ul>
-                        </li>
-                        <li style="margin-top: 10px;"><strong>Project:</strong> Metro Station Model
-                            <ul style="margin-top: 5px;">
-                                <li>Developed an application to find the shortest route on the Taipei MRT using open-source data, allowing users to input start and end locations for route options</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
+          </div>
         </div>
-        
-    </div>
-    <!------Contact Me------>
-    <div class="contact-me">
-        <p>Welcome to contact me!<br></p>
-    </div>
+
+        <div class="timeline-item">
+          <span class="year">2022.10 – 2023.09</span>
+          <div class="detail">
+            <strong>Graduate Research Assistant (Deep Learning)</strong>
+            <p class="org">IES Dept., University of Kassel · Germany</p>
+            <ul>
+              <li>Developed and evaluated 6 replay-based continual learning algorithms, reducing catastrophic forgetting to below 5% on 2-year time-series data and establishing 5 new evaluation standards.</li>
+              <li>Built and optimized a VAE-based anomaly detection model for the Digital Twin Solar project, boosting F1-Score from 0.96 to 1.00 and cutting detection time from 8.2s to 0.1s on cloud infrastructure.</li>
+              <li>Created a VAE model to reconstruct 1-year time-series data (526,000 points) with 96–97% similarity, along with 4 evaluation metrics for quality assessment.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">2019.07 – 2019.10</span>
+          <div class="detail">
+            <strong>Software Engineer (Internship)</strong>
+            <p class="org">Multicast Digital Integrated Corporation · Taiwan</p>
+            <ul>
+              <li>Worked on backend debugging, IoT system integration, and network security setup.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <h2>Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <span class="year">2020.10 – 2024.04</span>
+          <div class="detail">
+            <strong>M.Sc. Electrical Communication Engineering</strong>
+            <p class="org">Kassel University · Germany &nbsp;·&nbsp; ECTS: 1.9</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">2015.09 – 2019.06</span>
+          <div class="detail">
+            <strong>B.Sc. Electrical Engineering</strong>
+            <p class="org">National Central University · Taiwan &nbsp;·&nbsp; GPA: 3.59 / 4.0</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <h2>Certifications</h2>
+      <div class="cert-list">
+        <div class="cert-item">
+          IBM AI Engineering Professional Certificate
+          <span class="cert-date">2024.11</span>
+        </div>
+        <div class="cert-item">
+          IBM DevOps, Cloud, and Agile Foundation Specialization
+          <span class="cert-date">2025.02</span>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <h2>Skills</h2>
+      <div class="skills-list">
+
+        <div class="skills-group">
+          <span class="group-label">AI &amp; LLM</span>
+          <div class="tags">
+            <span class="tag">LLM Systems Design</span>
+            <span class="tag">GraphRAG</span>
+            <span class="tag">AI Agents</span>
+            <span class="tag">LLM Evaluation</span>
+            <span class="tag">LLM-as-a-Judge</span>
+            <span class="tag">RAGAS</span>
+            <span class="tag">Context Engineering</span>
+            <span class="tag">Memory Systems</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-label">Backend &amp; System</span>
+          <div class="tags">
+            <span class="tag">Webhook Architecture</span>
+            <span class="tag">System Optimization</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-label">Data Engineering</span>
+          <div class="tags">
+            <span class="tag">Web Crawling</span>
+            <span class="tag">OCR &amp; PDF Parsing</span>
+            <span class="tag">Vector Databases</span>
+            <span class="tag">Data Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-label">Programming</span>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">C</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-label">Database &amp; Tools</span>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Git</span>
+            <span class="tag">Bash</span>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <script src="/sidebar.js"></script>
 </body>
 </html>
