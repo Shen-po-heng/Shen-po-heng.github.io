@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const currentPath = window.location.pathname;
 
       links.forEach(link => {
-        const linkPath = new URL(link.href).pathname;
+        const target = new URL(link.href, window.location.href);
+        if (target.origin !== window.location.origin) return;
+        const linkPath = target.pathname;
         const isHome = linkPath === '/index.html' || linkPath === '/';
         const isCurrent = isHome
           ? currentPath === '/index.html' || currentPath === '/'
