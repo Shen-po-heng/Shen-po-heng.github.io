@@ -20,10 +20,11 @@
       <p style="color: var(--muted); font-size: 1.15rem; margin-bottom: 2.0 rem;">AI Software Engineer · Taiwan</p>
 
       <p>
-        AI Software Engineer specializing in building end-to-end, production-grade LLM systems —
-        including AI agents, evaluation infrastructure, and backend optimization.
-        I bridge AI research and real-world deployment, with a track record of delivering
-        measurable performance gains (e.g., 10× latency improvement) under production constraints.
+        AI Software Engineer with hands-on experience building and deploying enterprise LLM
+        applications. Currently leading the development of an AI agent platform for manufacturing
+        use cases, focusing on workflow design, retrieval accuracy, response quality evaluation,
+        latency optimization, and backend integration. Holds an M.Sc. in Electrical Communication
+        Engineering with a background in deep learning research and positioning systems.
       </p>
 
       <!-- Experience -->
@@ -34,14 +35,14 @@
           <span class="year">2025.12 – Present</span>
           <div class="detail">
             <strong>AI Software Engineer</strong>
-            <p class="org">HorusEye Technology (Subsidiary of Oomii Inc.) · Taiwan</p>
+            <p class="org">Oomii Inc. (HorusEye Tech) · Taiwan</p>
             <ul>
-              <li>Designed and deployed a production-grade LLM evaluation infrastructure, reducing evaluation time from 3 hours to 20 minutes (~10×), enabling continuous regression testing for AI systems.</li>
-              <li>Optimized AI backend systems (webhooks, CX agents), achieving latency reduction from 4–5s to 0.1–0.2s (~10× improvement) through system redesign — caching strategies, database migration from BigQuery to Cloud SQL.</li>
-              <li>Designed and led development of a large-scale AI testing pipeline (&gt;20K LOC), incorporating LLM-as-a-judge and cross-model validation to improve system reliability.</li>
-              <li>Owned and delivered core AI components in a 7-figure enterprise project, ensuring stable delivery under tight deadlines and high system load.</li>
-              <li>Developed and evaluated Graph RAG systems, improving knowledge retrieval accuracy for complex, real-world datasets.</li>
-              <li>Acted as a key technical bridge across teams (PM, backend, design), aligning research-driven AI solutions with production deployment requirements.</li>
+              <li><strong>System Architecture:</strong> Led the redesign and technical delivery of a manufacturing-focused AI platform for a multi-million-TWD enterprise engagement, using Google ADK to integrate SQL-grounded product retrieval, multilingual RAG, semantic video search, and LLM-driven orchestration.</li>
+              <li><strong>Accuracy &amp; Reliability:</strong> Improved product-query accuracy to 99%+ across specification and cross-vendor comparison tests by replacing vector-only retrieval with structured PostgreSQL queries and iteratively refining the system through automated evaluation.</li>
+              <li><strong>LLM Evaluation:</strong> Built an automated evaluation framework covering 1,200+ manufacturing test cases, reducing testing time from 3 hours to 20 minutes through database-grounded numerical verification, LLM-as-a-Judge, golden dataset calibration, intent-routing validation, and regression testing.</li>
+              <li><strong>Multilingual &amp; Video Retrieval:</strong> Developed bilingual hybrid retrieval with web grounding and a semantic video search pipeline using Whisper, timestamp-aware chunking, and LLM-based reranking.</li>
+              <li><strong>Performance &amp; Production:</strong> Reduced average end-to-end product-query latency from approximately 60 seconds to 3–5 seconds; developed Docker-based backend APIs and supported production deployment and maintenance.</li>
+              <li><strong>Technical Mentoring:</strong> Mentored three NTUST students and one intern on AI agents, RAG/GraphRAG, OCR pipelines, and evaluation methodologies, including a Neo4j knowledge graph prototype.</li>
             </ul>
           </div>
         </div>
@@ -112,57 +113,89 @@
       <div class="skills-list">
 
         <div class="skills-group">
-          <span class="group-label">AI &amp; LLM</span>
-          <div class="tags">
-            <span class="tag">LLM Systems Design</span>
-            <span class="tag">GraphRAG</span>
-            <span class="tag">AI Agents</span>
-            <span class="tag">LLM Evaluation</span>
-            <span class="tag">LLM-as-a-Judge</span>
-            <span class="tag">RAGAS</span>
-            <span class="tag">Context Engineering</span>
-            <span class="tag">Memory Systems</span>
-          </div>
-        </div>
-
-        <div class="skills-group">
-          <span class="group-label">Backend &amp; System</span>
-          <div class="tags">
-            <span class="tag">Webhook Architecture</span>
-            <span class="tag">System Optimization</span>
-            <span class="tag">REST APIs</span>
-            <span class="tag">CI/CD</span>
-            <span class="tag">Linux</span>
-            <span class="tag">Docker</span>
-          </div>
-        </div>
-
-        <div class="skills-group">
-          <span class="group-label">Data Engineering</span>
-          <div class="tags">
-            <span class="tag">Web Crawling</span>
-            <span class="tag">OCR &amp; PDF Parsing</span>
-            <span class="tag">Vector Databases</span>
-            <span class="tag">Data Pipelines</span>
-          </div>
-        </div>
-
-        <div class="skills-group">
-          <span class="group-label">Programming</span>
+          <span class="group-label">Programming Languages</span>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">C++</span>
             <span class="tag">C</span>
+            <span class="tag">SQL</span>
           </div>
         </div>
 
         <div class="skills-group">
-          <span class="group-label">Database &amp; Tools</span>
+          <span class="group-label">LLM & AI — Agent Design</span>
           <div class="tags">
-            <span class="tag">MySQL</span>
+            <span class="tag">Agent Harness</span>
+            <span class="tag">Agent Loops</span>
+            <span class="tag">Context Engineering</span>
+            <span class="tag">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-label">LLM & AI — Orchestration & Workflows</span>
+          <div class="tags">
+            <span class="tag">LangChain</span>
+            <span class="tag">LangGraph</span>
+            <span class="tag">Google ADK</span>
+            <span class="tag">OpenAI</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-label">LLM & AI — RAG & Fine-tuning</span>
+          <div class="tags">
+            <span class="tag">Hybrid RAG</span>
+            <span class="tag">GraphRAG</span>
+            <span class="tag">Agentic RAG</span>
+            <span class="tag">LoRA</span>
+            <span class="tag">DPO</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-label">Machine Learning</span>
+          <div class="tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Deep Learning</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-label">Backend & Databases</span>
+          <div class="tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Flask</span>
             <span class="tag">PostgreSQL</span>
+            <span class="tag">AlloyDB</span>
+            <span class="tag">BigQuery</span>
+            <span class="tag">Neo4j</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-label">Cloud & DevOps</span>
+          <div class="tags">
+            <span class="tag">Google Cloud Platform</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Linux</span>
             <span class="tag">Git</span>
-            <span class="tag">Bash</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <span class="group-label">Evaluation</span>
+          <div class="tags">
+            <span class="tag">LLM-as-a-Judge (RAGAS)</span>
+            <span class="tag">Automated Testing Frameworks</span>
+            <span class="tag">E2E Testing</span>
+            <span class="tag">Regression Testing</span>
+            <span class="tag">Smoke Testing</span>
+            <span class="tag">Integration Testing</span>
+            <span class="tag">Data Quality Testing</span>
           </div>
         </div>
 
